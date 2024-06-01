@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+   font-family: "Poppins", sans-serif;
+}
+header div a{
+    text-decoration: none;
+    color: #000;
+}
+ul li{
+    list-style-type:none ;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #000;
+}
+header{
+    width: 100%;
+    height: 75px;
+    background-color: rgb(255, 0, 0, 0.75);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index:3;
+}
+header .logo{
+    font-size: 28px;
+    font-weight: 700;
+}
+header .searcher .search{
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    background-color:orange;
+    border: 3px solid orange;
+    color: #000;
+    text-align: center;
+}
+.ara{
+    background-color:orange;
+    border: 2px solid orange;
+    width: 70px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+header nav ul{
+    display: flex;
+    flex-direction: row;
+}
+header nav ul li a{
+    margin-left:10px ;
+    font-size: 19px;
+    font-weight: 700;
+    color: aliceblue;
+}
+header nav ul li a:hover{
+    color: #000;
+}
+.hero-image{
+    position: relative;
+    width:100%;
+    height: 600px;
+}
+.hero-image .image{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.hero-image img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+main section.hero-image::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+main section.hero-image .content{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    
+}
+main section.hero-image .content h2{
+  margin-bottom: 10px;
+  color: red;
+  font-size: 30px;
+}
+main section.hero-image .content p{
+    margin-bottom: 20px;
+    font-size:20px;
+}
+section.how-to-use{
+    width: 100%;
+    height: auto;
+    padding-top:30px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    background-image: url(https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg);
+    background-attachment: fixed;
+    background-size: cover;   
+}
+section.how-to-use .container{
+    width:960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+section.how-to-use .container .section-head{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+section.how-to-use .container .section-head h2{
+    font-size: 24px;
+    color: aliceblue;
+    margin-bottom: 20px;
+}
+section.how-to-use .container .section-head p{
+    font-size: 18px;
+    color: aliceblue;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+section.how-to-use .container .cards{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+section.how-to-use .container .card{
+    width: 400px;
+    height: auto;
+    text-align: center;
+    margin-right: 30px;
+    background-color: #000;
+    border-radius: 20px;
+    padding: 10px;
+}
+section.how-to-use .container .card h2,
+section.how-to-use .container .card p{
+    color: aliceblue;
+    margin-bottom: 10px;
+}
+section.latests{
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: aliceblue;
+}
+section.latests .container{
+    width:1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+section.latests .container .section-head{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+section.latests .container .section-head h2{
+    font-size: 24px;
+    color: red;
+    margin-bottom: 20px;
+}
+section.latests .container .section-head p{
+    font-size: 18px;
+    color: blueviolet;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+section.latests .container .wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+section.latests .container .wrapper .card{
+    width: 20%;
+    height: 350px;
+    position: relative;
+    margin-right: 10px;
+}
+section.latests .container .wrapper .card img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+section.latests .container .wrapper .card span{
+    position: absolute;
+    padding: 5px;
+    top: 10;
+    left: 190;
+    background-color: yellow;
+    color: #000;
+    border-radius: 5px;
+    opacity: 0;
+    z-index: 4;
+}
+section.latests .container .wrapper .card h2{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: aliceblue;
+    opacity: 0;
+    z-index: 4;
+}
+section.latests .container .wrapper .card .filtre{
+    content: "";
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: rgb(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+    z-index: 3;
+    border-radius: 10px;
+}
+section.latests .container .wrapper .card:hover{
+    cursor: pointer;
+}
+section.latests .container .wrapper .card:hover > .filtre,
+section.latests .container .wrapper .card:hover > h2,
+section.latests .container .wrapper .card:hover > span{
+    opacity: 1;
+    transition: opacity .5s ease;
+}
+section.abone{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+section.abone .container .kart{
+    width: 400px;
+    height: auto;
+    background-color: orange;
+    border-radius: 15px;
+    padding: 15px;
+}
+section.abone .container .kart h2, section.abone .container .kart p{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+section.abone .container .kart input{
+    width: 80%;
+    height:50px;
+    display: block;
+    margin: 0 auto;
+    background-color: yellow;
+    border: 2px solid yellow;
+    padding-left: 75px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+section.abone .container .kart button{
+    background-color: red;
+    color: aliceblue;
+    width: 30%;
+    height: 30px;
+    border: 2px solid red;
+    cursor:pointer;
+    border-radius: 10px;
+    margin-left: 125px;
+}
+section.abone .container .kart button a{
+    text-decoration: none;
+}
+footer{
+    width: 100%;
+    background-color: gray;
+    height: 200px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
